@@ -147,7 +147,7 @@ def scrape_punjabipedia_definitions(word):
         return f"An unexpected error occurred: {e}"
 
 # Create a text input for word search
-st.subheader("🔍 Word Search")
+st.subheader("Word Search")
 word_input = st.text_input(
     "Enter a word in Gurmukhi:",
     placeholder="Type your word here... (ਇੱਥੇ ਆਪਣਾ ਸ਼ਬਦ ਲਿਖੋ...)",
@@ -158,7 +158,7 @@ word_input = st.text_input(
 col1, col2 = st.columns([3, 1])
 
 with col2:
-    search_button = st.button("🔍 Search", type="primary", use_container_width=True)
+    search_button = st.button("Search", type="primary", use_container_width=True)
 
 # Store the input in a variable and display it
 if word_input and (search_button or word_input):
