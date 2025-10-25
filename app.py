@@ -181,13 +181,13 @@ if word_input and (search_button or word_input):
             # Display each definition in a simple container format with border
             for i, definition in enumerate(definitions, 1):
                 with st.container(border=True):
-                    st.markdown(f"**📚 Definition {i}**")
+                    st.markdown(f"**Definition {i}**")
                     
                     # Display each paragraph as a separate line with spacing
                     for idx, paragraph in enumerate(definition['Definitions']):
                         st.subheader(paragraph)
                     
-                    st.caption(f"📍 Source: {definition['Source']}")
+                    st.caption(f"Source: {definition['Source']}")
                     st.markdown("")  # Add some spacing
         
         elif isinstance(definitions, list) and not definitions:
@@ -216,22 +216,7 @@ else:
     # Welcome message when no input
     st.info("👆 **Welcome to Punjabi Dictionary!**\n\nEnter a word above to search for its definitions from Punjabipedia.")
     
-    # Add some example words
-    st.markdown("### 💡 Try these example words:")
     
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        if st.button("ਵਿਰਾਸਤ"):
-            st.rerun()
-    
-    with col2:
-        if st.button("ਮੁਹੱਬਤ"):
-            st.rerun()
-    
-    with col3:
-        if st.button("ਸ਼ਾਂਤੀ"):
-            st.rerun()
 
 # Footer
 st.markdown("---")
