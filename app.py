@@ -149,9 +149,9 @@ def scrape_punjabipedia_definitions(word):
 # Create a text input for word search
 st.subheader("🔍 Word Search")
 word_input = st.text_input(
-    "Enter a word in Punjabi or English:",
+    "Enter a word in Gurmukhi:",
     placeholder="Type your word here... (ਇੱਥੇ ਆਪਣਾ ਸ਼ਬਦ ਲਿਖੋ...)",
-    help="You can enter words in Punjabi (Gurmukhi) or English"
+    help="You can enter words in Gurmukhi"
 )
 
 # Create columns for better layout
