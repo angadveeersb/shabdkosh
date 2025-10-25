@@ -203,7 +203,7 @@ else:
 st.markdown("---")
 st.markdown(
     "<div style='text-align: center; color: gray;'>"
-    "Built with ❤️ using Streamlit | ਸਤਿਨਾਮ ਵਾਹਿਗੁਰੂ"
+    "Built with ❤️ by Angadveer Singh | ਸਤਿਨਾਮ ਵਾਹਿਗੁਰੂ"
     "</div>",
     unsafe_allow_html=True
 )
